@@ -3,6 +3,7 @@ import VLCService from "./VLCService";
 
 import "./App.css";
 import RadioStationsList from "./RadioStation";
+import RemoteControl from "./RemoteControl";
 
 function App() {
   const [streamUrl, setStreamUrl] = useState("");
@@ -55,6 +56,8 @@ function App() {
   return (
     <div className="App">
       <RadioStationsList></RadioStationsList>
+      <RemoteControl name="Bernd"></RemoteControl>
+      
       <h1>VLC MP3 Stream Player</h1>
       <input
         type="text"

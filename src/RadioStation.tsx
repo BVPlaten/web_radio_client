@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import RadioStationService, { RadioStation } from "./RadioStationService";
+import { Container, ListGroup } from "react-bootstrap";
 
 const RadioStationsList = () => {
   const [radioStations, setRadioStations] = useState<RadioStation[]>([]);
@@ -18,14 +19,16 @@ const RadioStationsList = () => {
   };
 
   return (
-    <div>
-      <h1>Radio Stations</h1>
-      <ul>
+    <Container>
+      <h1 className="my-4">Radio Stations</h1>
+      <ListGroup>
         {radioStations.map((station) => (
-          <li key={station.name}>{station.name} - {station.url}</li>
+          <ListGroup.Item key={station.name}>
+            {station.name} - {station.url}
+          </ListGroup.Item>
         ))}
-      </ul>
-    </div>
+      </ListGroup>
+    </Container>
   );
 };
 
