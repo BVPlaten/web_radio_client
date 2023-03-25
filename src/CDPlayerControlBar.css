@@ -1,0 +1,32 @@
+.controlBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .controlBarButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .controlBarButton:focus {
+    outline: none;
+  }
+  
+  .controlBarButton:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .controlBarDescription {
+    margin-left: 20px;
+  }
+  
